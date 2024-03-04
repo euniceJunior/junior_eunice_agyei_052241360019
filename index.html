@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FACULTY OF APPLIED SCIENCE</title>
+    <style>
+            @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,700;1,800;1,900&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif; 
+    text-transform: capitalize; 
+    transition: all 0.2s linear; 
+} 
+.header{
+    display: flex;
+    position: relative;
+    width: 100%;
+    height: 9vh;
+    font-size: 20px;
+    padding: 10px 10px;
+    background-color:  #1b2945;
+    justify-content: space-between;
+}
+.header .seacrh{
+    position: relative;
+    width: 240px;
+}
+.header ul li a:hover{
+    color: #4CAF50;
+    font-size: 30px;
+}
+.seacrh-bar{
+    position: relative;
+    margin: 10px 5px;
+    width: 100%;
+    padding: 10px 10px 10px 20px;
+    border-radius: 40px;
+    border: none;
+    font-size: 14px;
+    transition: 0.6s all ease-in-out;
+}
+.seacrh-bar:focus-visible{
+    outline:none;
+    box-shadow: 0px 0px 6px 6px #e9093d;
+}
+.header ul{
+   display: flex;
+  
+   
+   
+}.header ul li{
+    list-style-type: none;
+    text-transform: capitalize;
+}
+
+.header ul li a{
+    text-decoration: none;
+    color: #fff;
+    font-weight: normal;
+    text-transform: capitalize;
+    padding: 0px 0px;
+    margin: 15px;
+    float: inline-start;
+    
+}
+
+
+.overall{
+    position: relative;
+    display: flex;
+    width: 100%;
+    height: 13vh;
+    justify-content: space-between;
+    padding: 10px 10px;
+    background-color: rgb(245, 242, 238);
+}
+.overall .head ul li a:hover{
+color: rgb(55, 0, 255);
+    font-size: 34px;
+}
+.head ul{
+        display: flex; 
+}
+.head ul li{
+    margin-left:50px;
+    list-style-type: none;
+    padding: 20px;
+    margin: 30px;
+}
+
+.head ul li a{
+    text-decoration: none;    font-size: 27px;
+    color: black; 
+}
+.contact a{
+    text-decoration: none;
+    font-size: 30px;
+    color: #1b2945;
+}
+.contact a:hover{
+    font-size:20px;
+    color:black ;
+}
+.full{
+    position: relative;
+    width: 100%;
+    height: 70vh;
+    background-image:url(LAST.jpeg);
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-position: top,center;
+    background-size: 100%;
+    justify-content: space-between;
+    padding:10px 30px;  
+    color: rgb(248, 248, 245);
+    
+    
+}
+.full h4{
+    margin: 60px;
+    padding: 70px;
+    font-size: 50px;
+    text-align: center;
+    
+}
+.full h2{
+    font-size: 70px;
+    text-align: center;
+}
+
+.per p{
+    margin: 20px 0;
+    font-size: 30px;
+}
+.both {
+    position: relative;
+    margin: 20px;
+    padding: 20px;
+   
+    
+}
+.both p{
+    font-size: 30px;
+    margin: 20px 0;
+    text-align: center;
+}
+
+.line ul li{
+    gap: 19px;
+    font-size: 30px;
+    text-align: center;
+    margin: 20px 100px;
+    list-style-type: none;
+    
+}
+.vision h3{
+    position: relative;
+    font-size: 40px;
+    margin: 20px 0;
+    text-align: center;
+
+
+}
+.vision p{
+    font-size: 30px;
+    text-align: center;
+}
+
+.obj h3{
+    font-size: 40px;
+    margin: 20px 0;
+    text-align: center;
+}
+.main p{
+    font-size: 30px;
+    margin: 20px 0;
+}
+.line2{
+    position: relative;
+    margin: 20px;
+    padding: 20px;
+    font-size: 20px;
+}
+.line2 ul li{
+    gap: 19px;
+    font-size: 30px;
+}
+.faculty{
+    position: relative;
+    display: flex;
+    width: 73%;
+    height: 6vh;
+    background-color: rgb(233, 220, 204);
+    padding: 10px 0;
+    
+    
+}
+.faculty h3{
+    font-size: 30px;
+    
+}
+.faculty h2{
+    font-size: 30px;  
+}
+.faculty1 a{
+    position: relative;
+    display: flex;
+    padding: 10px 0;
+    font-size: 30px;
+    text-decoration: none;
+    color: black;
+}
+.textcontent{
+    position: relative;
+    z-index: 10;
+    bottom: -100%;
+    background-color: rgba(255, 255,255, 0.705);
+    transition: 0.3s;
+    
+}
+.card:hover .textcontent{
+    bottom: 0;
+}
+
+
+
+.row1{
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+    padding: 20px 40px;
+    background:#1b2945;
+    background-repeat: no-repeat;
+    background-size: cover;
+    gap: 10px;
+    
+    
+}
+.row1 .col-lg-3 ul li{
+    display: flex;
+    position: relative;
+    text-decoration: none;
+    text-wrap: wrap;
+    font-size: 20px;
+    transition: all 0.2s linear;
+    margin: 5px 0;
+    color: #fff;
+}
+.row1 .col-lg-3 ul li:hover{
+    font-size: 25px;
+}
+.row1 .col-lg-3 ul li a{
+    text-decoration: none;
+    color: white;
+}
+.row1 .col-lg-3 ul p{
+     font-size: 26px;
+     color: #4CAF50;
+}
+.bg-dark-1  h6{
+    text-align: center;
+    background-color: #1b2945;
+    padding: 18px;
+    font-size: larger;
+    color: #fff;
+}
+.special-content {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 20px;  
+  }
+  
+  .special-box {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .special-box img {
+    max-width: 90%;
+    border-radius: 10px;
+  }
+  .special-box img:hover{
+    max-width: 100%;
+  }
+  
+  .special-box h2 {
+    font-size: 20px;
+    margin-top: 10px;
+    margin-bottom: 15px;
+  }
+  .special-box h2:hover{
+    font-size: 30px;
+  }
+  
+  .special-box p {
+    font-size: 16px;
+    line-height: 1.5;
+  }
+  .special-box p:hover{
+    font-size: 20px;
+  }
+
+    </style>
+</head>
+<body>
+    <div class="header">
+
+        <ul>
+            <li><a href="Registration.html">registration</a></li>
+            <li><a href="faculty.html">Faculty</a></li> 
+            <li><a href="payment.html">payment</a></li>
+            <li><a href="timetables.html">Timetables</a></li>
+            <li><a href="department.html">Department</a></li>
+     </u>
+        <div class="search">
+            <input type="text" class="search-bar" placeholder="search......">
+        </div>
+    </div>
+        
+    
+    <div class="overall">
+        <div class="logo"><img src="compsa.jpg" width="500px" height="70px"></div>
+
+       
+    </div>
+
+     <div class="full">
+            <h4>HOME DEPARTMENT</h4>
+            <h2>DEPARTMENT OF COMPUTER SCIENCE</h2> 
+     </div>
+
+     <div class="per">
+
+          <p>The Department of Computer Science has since in 2007 been training students in Higher National Diploma programme.<br> The Department trains students in various fields of computing that equips them with knowledge for development and utilization of modern computing. Graduates are placed in work positions that are in high demand in the society.
+
+          </p>
+     </div>
+
+            <div class="both">
+               <p>The Department thus offers</p>
+               <div class="line">
+                  <ul>
+                    <li>Bachelor of Building Technology (BTech) Top-up Programme</li>
+                    <li>HND Building Technology</li>
+                    <li>Construction Technicians Certificate Parts I-III (CTC I-III),</li>
+                 </ul>
+                </div>
+              </div>
+    <div class="vision">
+        <b>
+            <h3 class="vis">VISION</h3>
+        </b>
+        <p>To produce high calibre computer science graduates to support and sustain the industrial and economic development of Ghana and Africa</p>
+    </div>    
+   
+    <div class="obj">
+    <h3><b>OBJECTIVE</b></h3>
+    </div>
+    <div class="main">
+        <p>To produce high caliber skilled manpower in technical computing to satisfy the needs of research, industrial and educational establishments in Ghana and Africa.
+            To offer computer science graduates the opportunity to discover and fulfill their potential and provide access to a first class education.
+            To educate students to be competitive in the technological world.:</p>
+           <div class="line2">
+    </div>
+   
+    <div class="faculty">
+        <h2><b>#</b></h2>
+        <h3>Faculty</h3>
+    </div>
+    <div class="faculty1"><a>Faculty of Built and Natural Environment</a></div>
+
+            <div class="special-content">
+                <div class="special-box">
+                    <img src="datascience.jpg" alt="Image">
+                    <h2>Programmes</h2>
+                    <p>Bachelor of Technology in Data Science</p>
+                </div>
+                <div class="special-box">
+                    <img src="LAST.jpeg" alt="Image">
+                    <h2>Programmes 2</h2>
+                    <p>Diploma in construction Technology(Tertiary)</p>
+                </div>
+                <div class="special-box">
+                    <img src="hardware.jpg" alt="Image">
+                    <h2>Programmes 3</h2>
+                    <p>Diploma in Hardware & Networking.</p>
+                </div>
+                <div class="special-box">
+                    <img src="health.jpg" alt="Image">
+                    <h2>programes</h2>
+                    <li>Diploma in Health Statistics</li>
+                </div>
+                <div class="special-box">
+                    <img src="compsa.jpg" alt="Image">
+                    
+                </div>
+                <div class="special-box">
+                    <img src="comkstu.jpg" alt="Image" height="420px" width="500px">
+                    <h2>OFFICES</h2>
+                    <p>Office for International Affairs & Institutional Linkages.</p>
+                </div>
+            </div>
+            <section id="Last">
+                <footer>
+                    <div class="row1">
+                        <div class="col-lg-3">
+                            <ul>
+                              <p>Quick Links</p>
+                              <li><a href="index.html">Staff Login</a></li>
+                              <li><a href="faculty.html">Staff Mail</a></li>
+                              <li><a href="departments.html">Student Portal</a></li>
+                              <li><a href="registration.html">Apply</a></li>
+                              <li><a href="timetables.html">Timetables</a></li>
+                            </ul> 
+                        </div>
+                        <div class="col-lg-3">
+                          <ul>
+                            <p>Programmes</p>
+                            <li>Bachelor of Science in Applied Statistics (Environmental Statistics)</li>
+                             <li>Bachelor of Science in Applied Statistics (Financial Statistics)</li>
+                             <li>Bachelor of Science in Applied Statistics (Health Statistics)</li>
+                             <li>Bachelor of Science in Information Science</li>
+                             <li>Bachelor of Technology in Computer Technology</li>
+                             <li>Bachelor of Technology in Data Science</li>
+                             <li>Bachelor of Technology in Food Technology</li>
+                             <li>Bachelor of Technology in Hospitality Management and Catering Technology</li>
+                             <li>Diploma in Food Processing Technology (Tertiary)</li>
+                             <li>Diploma in Hardware & Networking</li>
+                             <li>Diploma in Health Statistics</li>
+                             <li>Diploma in Health Statistics (Tertiary)</li><br>
+                             <li>Diploma in Hospitality Operations and Management</li>
+                             <li>Diploma in Information Technology</li>
+                             <li>Diploma in Information Technology (Tertiary)</li>
+                             <li>Diploma In Library And Information Science</li>
+                             <li>Diploma in Statistics for Risk Management</li>
+                             <li>Diploma in Web Applications and Database</li>
+                             <li>Higher Diploma In Health Statistics</li>
+                             <li>Higher Diploma in Health Statistics (Tertiary)</li>
+                             <li>HND Computer Science</li>
+                             <li>HND Hotel, Catering and Institutional Management</li>
+                             <li>HND Statistics</li>
+                             <li>Master of Technology in Applied Statistics (Environmental Statistics)</li>
+                             <li>Master of Technology in Applied Statistics (Financial Statistics)</li>
+                             <li>Master of Technology in Applied Statistics (Health Statistics)</li>
+                          </ul>
+                      </div>
+                      <div class="col-lg-3">
+                        <ul>
+                          <p>Faculty of Applied Sciences</p>
+                          <p>Department under (FACULTY OF APPLIED SCIENCE) </p>
+                          <li>>Department of Computer Science</li>   
+                          <li>Department of Food Technolog</li>
+                          <li>Department of Information Science</li>
+                          <li>Department of Mathematical Sciences</li>
+                          <li>Department of Hotel, Catering and Institutional Management</li>
+
+                          <p style="padding-top: 10px;">Faculty of Engineering</p>
+                          <li>Civil Engineering</li>
+                          <li>Mechanical Engineering</li>
+                          <li>Oil and Gas navbar-expand-lg</li>
+                        </ul>
+                    </div>
+                        <div class="col-lg-3">
+                            <ul>
+                                <p> Contact KsTU</p>
+                                    <li>Tel: (+233) 0201776325</Li>
+                                    <li>Tel: (+233) 0550866763</li>
+                                    <li>Email Us: info.fast@kstu.edu.gh</li>
+                                <li>Tel: Admissions: +233(0)322 496 534, +233(0)322 496 380</li>
+                            </ul>
+                        </div>
+                    </div>   
+                </footer>
+            </section>
+            <hr>
+    <footer class="bg-dark-1">
+            <h6 class="m-0 mt-4 text-center text-white text-capitalize">Copyright &copy; 2024 designed by AGYEI EUNICE JUNIOR</h6>
+          
+        
+      </footer>
+
+    
+</body>
+</html>

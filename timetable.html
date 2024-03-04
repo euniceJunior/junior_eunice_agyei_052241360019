@@ -1,0 +1,854 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DEPARTMENT OF COMPUTER SCIENCE || Kumasi Technical University</title>
+    <style>
+            @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,700;1,800;1,900&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    outline: none; 
+    font-family: 'Poppins', sans-serif; 
+    text-transform: capitalize; 
+    transition: all 0.2s linear; 
+    font-size: 18px;
+} 
+
+.header{
+    display: flex;
+    position: relative;
+    width: 100%;
+    height: 8vh;
+    font-size: 20px;
+    padding: 10px 10px;
+    background-color: #1b2945;
+    justify-content: space-between;
+    
+}
+.header .seacrh{
+    position: relative;
+    width: 240px;
+    
+}
+.seacrh-bar{
+    position: relative;
+    margin: 10px;
+    width: 100%;
+    padding: 10px 10px 10px 20px;
+    border-radius: 40px;
+    border: none;
+    font-size: 14px;
+    transition: 0.6s all ease-in-out;
+    align-items: center;
+}
+.seacrh-bar:focus-visible{
+    outline:none;
+    box-shadow: 0px 0px 6px 6px #4CAF50;
+}
+.header ul{
+   display: flex;
+  
+   
+   
+}.header ul li{
+    list-style-type: none;
+    text-transform: capitalize;
+}
+
+.header ul li a{
+    text-decoration: deeppink;
+    color: #d172bb;
+    font-weight: normal;
+    text-transform: capitalize;
+    padding: 0px 0px;
+    margin: 10px;
+    float: inline-start; 
+}
+.header ul li a:hover{
+    color: #4CAF50;
+    font-size: 30px;
+}
+
+
+.overall{
+    position: relative;
+    display: flex;
+    width: 100%;
+    height: 13vh;
+    justify-content: space-between;
+    padding: 10px 10px;
+    background-image: url(wallhaven-8ogr9j.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.overall .head ul li a:hover{
+    color: rgb(55, 0, 255);
+    font-size: 40px;
+}
+.head ul{
+        display: flex; 
+}
+.head ul li{
+    margin-left:50px;
+    list-style-type: none;
+    padding: 20px;
+    margin: 30px;
+}
+
+.head ul li a{
+    text-decoration: d;
+    font-size: 27px;
+    color: black;
+    
+}
+
+.contact a:hover{
+    text-decoration: deeppink;
+    color: blue;
+    font-size: 40px;
+}
+.contact a{
+    text-decoration: none;
+    color: rgb(168, 98, 135);
+    font-size: 30px;
+    
+}
+.container1 {
+    position: relative;
+   padding: 20px 10px;
+   text-align:center;
+   
+}
+
+
+
+
+#button {
+    background-color: rgb(233, 17, 17);
+    border-radius: 5px;
+    margin-left: 1555px;
+    margin-bottom: 5px;
+    color: rgb(175, 77, 147);
+    cursor: pointer;
+}
+
+
+
+main{
+    
+    margin: 0 auto;
+    padding: 20px;
+    border:1px solid black ;
+    box-shadow: inset;
+}
+table{
+    border-collapse: collapse;
+    width: 100%;
+    
+
+}
+.table1 ,th ,td ,tr{
+    border: 1px solid black;
+    padding: 8px;
+    text-align: center;
+    color: black;
+}
+.table1 ,h1,p{
+    text-align: center;
+    font-size: 40px;
+}
+.row1{
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+    padding: 20px 40px;
+    background:#253960;
+    background-repeat: no-repeat;
+    background-size: cover;
+    gap: 10px;
+    
+    
+}
+.row1 .col-lg-3 ul li{
+    display: flex;
+    position: relative;
+    text-decoration: deeppink;
+    text-wrap: wrap;
+    font-size: 20px;
+    transition: all 0.2s linear;
+    margin: 5px 0;
+    color: #b1518b;
+}
+.row1 .col-lg-3 ul li:hover{
+    font-size: 25px;
+}
+.row1 .col-lg-3 ul li a{
+    text-decoration: none;
+    color: rgb(207, 129, 183);
+}
+.row1 .col-lg-3 ul p{
+     font-size: 26px;
+     color: #4CAF50;
+}
+.bg-dark-1  h6{
+    text-align: center;
+    background-color: #394f79;
+    padding: 18px;
+    font-size: larger;
+    color: #a2578d;
+}
+    </style>
+</head>
+<div class="header">
+        
+    <ul>
+        <li><a href="faculty.html">Faculty</a></li>
+        <li><a href="timetable.html">Timetables</a></li>
+        <li><a href="payments.html">Payment</a></li>
+        <li><a href="registration.html">Registration</a></li>
+        <li><a href="department.html">Department</a></li>
+    </ul>
+    <div class="seacrh">
+        <input type="text" class="seacrh-bar" placeholder="seacrh....">
+        
+    </div>
+
+</div>
+<body>
+    
+<main>  <section>
+    <h1>STUDENT TIMETABLE</h1>
+    <p>HERE IS THE TIMETABLE FOR STUDENTS IN COMPUTER SCIENCE DEPARTMENT</p>
+    <table>
+        <div class="table1">
+        <tr>
+            <th colspan="17">Kuamsi Technical University</th>
+       </tr>
+       <tr>
+            <th colspan="17">COMPUTER SCIENCE DEPARTMENT</th>
+       </tr>
+       <tr>
+            <th colspan="17">TimeTable for 2023/2024 Semester one</th>
+       </tr>
+       <tr>
+        <th>Days</th>
+        <th>Session</th>
+        <th> Class</th>
+        <th>8:00-9:00</th>
+        <th>9:00-10:00</th>
+        <th>10:00-11:00</th>
+        <th>11:00-12:00</th>
+        <th>12:00-13:00</th>
+        <th>13:00-14:00</th>
+        <th>14:00-15:00</th>
+        <th>15:00-16:00</th>
+        <th>16:00-17:00</th>
+        <th>17:00-18:00</th>
+        <th>18:00-19:00</th>
+        <th>19:00-20:00</th>
+        <th>20:00-21:00</th>
+       </tr>
+
+       <tr>
+          <td rowspan="12">Monday</td>
+          <td rowspan="12">Regular</td>
+          <td>CSH 1</td>
+          <td colspan="2">CSH 131 (Introduction to Structured program),lab 1</br>[Leo paapa Tattrah ,0599739719]</br></td>
+          <td colspan="2">CSH 173 (Fundamental of Computing), CLT 202</br>{Ama pokuan Obeng, 0207602365}</br></td>
+          <td></td>
+          <td colspan="4">CSH 181 (Basic Electronics),Lab 1,</br>[Andrew Pillips, 0200161582]</br></td>
+          <td colspan="4" rowspan="12"></td>
+        </tr>
+        <tr>
+            <td>CSH 2</td>
+            <td>BLT 102</td>
+            <td>BLT 102</td>
+            <td colspan="2">CSH 245 (Probability and statistics),BLT 102</br>[Foster,0244528484]</br></td>
+            <td colspan="2">CSH 221 (System Analysis and Design),CLT 202 </br>[Asare Yaw,0200553550]</br</td>
+            <td colspan="2">CSH 201 (Human Computer Interaction),BLT 202 </br>[Daniel Adjei,0206898769]</br></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>CSH 3</td>
+            <td colspan="2">CSH 331 (Principles of Data Mining),BTLT 403</br>[ Emmanuel Oppong Afriyie,0553599059]</br></td>
+            <td colspan="2">CSH 313 (Web Services with Semantic Lang),BTLT 403</br>[Mavis Sarah Gyimah,0553599059]</br></td>
+            <td></td>
+            <td colspan="2">CSH 309 (Introduction to Artificial Intelligence),Lab 4</br>[Mary Opoku Ansong,0553599059]</br></td>
+            <td colspan="2">CSH 337 (Mgt and Organizational Behaviour),TLT 403</br>[Thekle,02624788492]</br></td>
+        </tr>
+        <tr>
+            <td>BTCT 1A</td>
+            <td></td>
+            <td></td>
+            <td colspan="2">BTCT 105 (Principles of Programming in python),Lab 3</br>[Leo paapa Tattrah ,0599739719]</br></td>
+            <td colspan="2">BTCT 141 (Fundamental of Computing), CLT 202</br>{Ama pokuan Obeng, 0207602365}</br></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>BTCT 1B</td>
+            <td colspan="2">BTCT 105 (Computing Mathematics),CLT 302</br>[MATHS]</br></td>
+            <td colspan="2">BTH 141(Digital Fundamental),Lab 1</br>[Andrew Philips, 0207602365]</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>BTCT 2A</td>
+            <td colspan="2">BTCT 215 (Discrete Mathematics),OLD GLT 102</br>[Dr Adu ,0200553550]</br></td>
+            <td colspan="2">BTCT 209 (Human Computer Interactio),OLD GLT 102</br>[Daniel Adjei,0244528484]</br></td>
+            <td colspan="2">BTCT 211(Operations Research 2),OLD GLT 102</br>[ Mr Owusu Yeboah,0206898769]</br></td>
+            <td></td>
+            <td colspan="2">BBT 233(Database Systems),OLD GLT<br>[Mavis Sarah Gyimah,0599739719]</br</td>
+        </tr>
+        <tr>
+            <td>BTCT 2B</td>
+            <td colspan="2">BCT 215 (Management Information Systems),CLT 202</br>[Mary Opoku Ansong0244528484]</br></td>
+            <td colspan="2">BTCT 207 (System Analysis and Design),CLT 202 </br>[Asare Yaw,0200553550]</br></td>
+            <td colspan="2">BTCT 233 (Database Systems),OLD GLT<br>[Mavis Sarah Gyimah,0599739719]</br></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>BTCT 3</td>
+            <td colspan="2">BTCT 309 (Principles of Data Mining),BBT 433</br>[Evans Kotei,0553599059]</br></td>
+            <td colspan="2">BTCT 301(Ethical and Legal Imp.of Comp),BTLT 402</br>[Emmanuel Boachi,0553599059</br></td>
+            <td></td>
+            <td colspan="4">BTCT 341(Digital Network and Cyber Security),BTLT402 </br>[Justice Keaney Ayamah,02624788492]</td>
+        </tr>
+        <tr>
+            <td>BTCT 4</td>
+            <td colspan="2">BTCT 433 (Digital Marketting and SEO),BTLT 401<br>[Emmanuel Boachi,0553599059</br></td>
+            <td colspan="4">BTCT 401(User Interface & User Experience),Lab 4</br>[Benjamin Odoi-Lartey],0553599059</br></td>
+            <td></td>
+            <td colspan="2">BTCT 441(Introduction to Big Data),BTLT 401</br>[Evans Kotei,02624788492]</td>
+        </tr>
+    </div>
+    </table>
+    <table>
+    <div class="table2">
+        <tr class="row">
+            <th colspan="17">Kumasi Technical University</th>
+       </tr>
+       <tr class="row">
+            <th colspan="17">COMPUTER SCIENCE DEPARTMENT</th>
+       </tr>
+       <tr class="rows">
+            <th colspan="17">TimeTable for 2023/2024 Semester one</th>
+       </tr>
+       <tr>
+        <th>Days</th>
+        <th>Session</th>
+        <th> Class</th>
+        <th>8:00-9:00</th>
+        <th>9:00-10:00</th>
+        <th>10:00-11:00</th>
+        <th>11:00-12:00</th>
+        <th>12:00-13:00</th>
+        <th>13:00-14:00</th>
+        <th>14:00-15:00</th>
+        <th>15:00-16:00</th>
+        <th>16:00-17:00</th>
+        <th>17:00-18:00</th>
+        <th>18:00-19:00</th>
+        <th>19:00-20:00</th>
+        <th>20:00-21:00</th>
+       </tr>
+
+       <tr>
+        <td rowspan="12">Tuesday</td>
+          <td rowspan="12">Regular</td>
+          <td>CSH 1</td>
+          <td colspan="2">COS 131 (Communication Skills),lab 1</br>[paapa Daniel ,0599739719]</br></td>
+          <td></td>
+          <td colspan="2">CSH 173 (Computer Hardware), CLT 202</br>{Kofi Obeng, 0207602365}</br></td>
+          <td colspan="4">CSH 173 ( IT Mathematics), CLT 202</br>{Kofi Obeng, 0207602365}</br></td>
+          <td colspan="4" rowspan="12"></td>
+        <tr>
+            <td>CSH 2</td>
+            <td>BLT 102</td>
+            <td>BLT 102</td>
+            <td colspan="2">BTCT 245 (Financial Accounting),BLT 102</br>[Dr Micheal Yeboah,0244528484]</br></td>
+            <td colspan="2">BTCT 221 (Probability and Statistics),CLT 202 </br>[Foster,0200553550]</br</td>
+            <td colspan="2">BTCT 201 (System Analysis And Design),BLT 202 </br>[Asare Yaw Obeng,0206898769]</br></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>CSH 3</td>
+            <td colspan="2">CSH 341 (Operations Research),BTLT 403</br>[Osei Frimpong,0553599059]</br></td>
+            <td colspan="2">CSH 313 (Introduction to Artificial Intelligence),BTLT 403</br>[Mary Opokua Ansong,0553599059]</br></td>
+            <td></td>
+            <td colspan="2">CSH 309 (Principles of Data Mining),Lab 4</br>[ EmmanuelOpoku Afriyie,0553599059]</br></td>
+            <td  colspan="2"></td>
+        </tr>
+        <tr>
+            <td>BTCT 1A</td>
+            <td></td>
+            <td></td>
+            <td colspan="2">BTcT 105 (Principles of Economics ),Lab 3</br>[Dr Adjei Danquah ,0599739719]</br></td>
+            <td colspan="2">BTCT 141(Communication Skills),Lab 1</br>[Mr Appiah Danquah, 0207602365]</td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>BTCT 1B</td>
+            <td colspan="2">BTCT 105  (Principles of Economics ),Lab 3</br>[Dr Adjei Danquah ,0599739719]</br</td>
+            <td colspan="2">BTCT 141  (Communication Skills),Lab 1</br>[Mr Appiah Danquah, 0207602365] </td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>BTCT 2A</td>
+            <td colspan="2">BCT 205 (Backend Web-Development),Lab 1</br>[Mercy Vicentia],0200553550] GPA</br></td>
+            <td colspan="2">BCT 207(Management Information System),BTLT 202</br>[Mary Opku Ansong,0244528484]</br></td>
+            <td colspan="2">BCT 211(System Analysis and Design),Lab 1</br>[Asare Yaw Obeng,0206898769]</br></td>
+            <td></td>
+            <td colspan="2">BCT 233(Discrete Mathematics),BTLT 202<br>[Dr Adu ,0599739719]</td></td>
+        </tr>
+        <tr>
+            <td>BTCT 2B</td>
+            <td colspan="2">BCT 233(Operations Research),BTLT 202<br>[Dr Adu ,0599739719]</td></td>
+            <td colspan="2">BCT 233(Discrete Mathematics),BTLT 202<br>[Dr Adu ,0599739719]</td></td>
+            <td colspan="2">BCT 205 (Backend Web-Development),Lab 1</br>[Mercy Vicentia],0200553550] GPA</br></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>BTCT 3</td>
+            <td colspan="2">BTCT 311(Management and Organizational Behavior)CLT 202 [],0553599059]</br></td>
+            <td colspan="2">BBT 301(Data Warehousing),CLT 202<br>[Emmanuel Oppong,0553599059</br></td>
+            <td></td>
+            <td colspan="2">BTCT 325(Coud Computing Tech),BTLT 102</br>[Sylvester Agyen],02624788492]</td>
+        </tr>
+        <tr>
+            <td>BTCT 4</td>
+            <td colspan="2">BTCT 401(Web Services with Semantic Lang)[Mavis Sarah Gyimah,0553599059]</br></td>
+            <td colspan="2">BTCT 102 (Introduction to Big Data),Lab 4</br>[Opoku Ansong,0553599059</br></td>
+            <td></td>
+            <td colspan="2">BTCT 441(Finanacial Technology ( FinTech)),BBT 401</br>[Mr Kyei,02624788492]</td>
+        </tr>
+    </div>
+    </table>
+    <table>
+        <tr>
+            <th colspan="17">Kuamsi Technical University</th>
+       </tr>
+       <tr>
+            <th colspan="17">COMPUTER SCIENCE DEPARTMENT</th>
+       </tr>
+       <tr>
+            <th colspan="17">TimeTable for 2023/2024 Semester one</th>
+       </tr>
+       <tr>
+        <th>Days</th>
+        <th>Session</th>
+        <th> Class</th>
+        <th>8:00-9:00</th>
+        <th>9:00-10:00</th>
+        <th>10:00-11:00</th>
+        <th>11:00-12:00</th>
+        <th>12:00-13:00</th>
+        <th>13:00-14:00</th>
+        <th>14:00-15:00</th>
+        <th>15:00-16:00</th>
+        <th>16:00-17:00</th>
+        <th>17:00-18:00</th>
+        <th>18:00-19:00</th>
+        <th>19:00-20:00</th>
+        <th>20:00-21:00</th>
+       </tr>
+
+       <tr>
+          <td rowspan="12">Wednesday</td>
+          <td rowspan="12">Regular</td>
+          <td>CSH 1</td>
+          <td colspan="2">CSH 141 (Fundamental of Computing), CLT 202</br>{Ama pokuan Obeng, 0207602365}</br></td>
+          <td colspan="2">CSH (Introduction to Structured Program), CLT 302</br>[Leo paapa Tattrah ,0599739719]]</br></td>
+          <td></td>
+          <td colspan="4">AFS 100 (African Studies),CLT 303,<br>[Rev. Dr Brew, 0200161582]</br></td>
+          <td colspan="4" rowspan="12"></td>
+        </tr>
+        <tr>
+            <td>CSH 2</td>
+            <td>BLT 102</td>
+            <td>BLT 102</td>
+            <td colspan="2">CSH 251 (Web Development Technology),BTLT 202<br>[Eric Yaw Agbezuge,0244528484]</br></td>
+            <td colspan="2">CSH 201 (Human Computer Interactio),OLD GLT 102</br>[Daniel Adjei,0244528484]</br></td>
+            <td colspan="2">CSH 231 (Data Base System),BTLT 102 <br>[Emily Opoku Aboagye,0206898769]</br></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>CSH 3</td>
+            <td colspan="2">CSH 317 (Data Communication and Network II),BTLT 203<br>[Nana Kofi Ahoi Appiah-Boadu,0553599059]</br></td>
+            <td colspan="2">CSH 341 (Operations Research),BTLT 203</br>[Osei Frimpong,0553599059]</br></td>
+            <td></td>
+            <td colspan="2">CSH 309( Management Information System),Lab 4</br>[ Mary Opoku Ansong,0553599059]</br></td>
+            <td colspan="">CSH  337 (Construction Technology),TLT 403</br>[Thekle,02624788492]</br></td>
+        </tr>
+        <tr>
+            <td>BTCT 1A</td>
+            <td></td>
+            <td></td>
+            <td colspan="2">BTCT 109 (Computing Mathematics),CLT 301<br>[Sarfo Frimpong ,0599739719]</br></td>
+            <td colspan="2">AFS 100(African Studies),CLT 304<br>[Dr Mark Appiah, 0207602365]</td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>BTCT 1B</td>
+            <td colspan="2">BTCT 105 (Principles of Programming in python),Lab 3<br>[Leo paapa Tattrah ,0599739719]</br></td>
+            <td colspan="2">BTCT 141 (Fundamental of Computing), CLT 202</br>{Ama pokuan Obeng, 0207602365}</br></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>BTCT 2A</td>
+            <td colspan="2">BCT 233(Operations Research),BTLT 202<br>[Dr Adu ,0599739719]</br></td>
+            <td colspan="2">BCT 211(System Analysis and Design),Lab 1<br>[Asare Yaw Obeng,0206898769]</br></td>
+            <td colspan="2">BCT 205 (Backend Web-Development),Lab 1<br>[Mercy Vicentia],0200553550] GPA</br></td>
+            <td></td>
+            <td colspan="2">BCT 203(Management Information System),BTLT 202<br>[Mary Opoku Ansong ,0599739719]</td>
+        </tr>
+        <tr>
+            <td>BTCT 2B</td>
+            <td colspan="2">BTCT 201 (Human Computer Interactio),OLD GLT 102</br>[Daniel Adjei,0244528484]</br></td>
+            <td colspan="2">BTCT 233(Discrete Mathematics),OLDGLT 001<br>[Dr Adu ,0599739719]</td></td>
+            <td colspan="2">BCTT 211(System Analysis and Design),Lab 1<br>[Asare Yaw Obeng,0206898769]</br></br></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>BTCT 3</td>
+            <td colspan="2">Research Methods for computing Scientists[Samuel King Opoku 0242124291]CLT 205</td>
+            <td colspan="2">BCT 433(Principles of Data Mining),CLT 205</br>[Evans Kyei,0553599059</br></td>
+            <td></td>
+            <td colspan="2">BCT 35(Research Methods for Computer Scientists ),CLT 205<br>[Samuel King Opoku,02624788492]</td>
+        </tr>
+        <tr>
+            <td>BBT 4</td>
+            <td colspan="2">BCT Projects</td>
+            <td colspan="2">BCT 433(Digital Marketting and SEO),CLT 201</br>[Emmanuel Boachi,0553599059</br></td>
+            <td></td>
+            <td colspan="2">BCT 405(Internet of Thins(IOT)),LAB 4<br>[Eric Yaw Agbezuge,02624788492]</td>
+        </tr>
+    </div>
+    </table>
+    <table>
+        <tr>
+            <th colspan="17">Kuamsi Technical University</th>
+       </tr>
+       <tr>
+            <th colspan="17">COMPUTER SCIENCE DEPARTMENT</th>
+       </tr>
+       <tr>
+            <th colspan="17">TimeTable for 2023/2024 Semester one</th>
+       </tr>
+       <tr>
+        <th>Days</th>
+        <th>Session</th>
+        <th> Class</th>
+        <th>8:00-9:00</th>
+        <th>9:00-10:00</th>
+        <th>10:00-11:00</th>
+        <th>11:00-12:00</th>
+        <th>12:00-13:00</th>
+        <th>13:00-14:00</th>
+        <th>14:00-15:00</th>
+        <th>15:00-16:00</th>
+        <th>16:00-17:00</th>
+        <th>17:00-18:00</th>
+        <th>18:00-19:00</th>
+        <th>19:00-20:00</th>
+        <th>20:00-21:00</th>
+       </tr>
+
+       <tr>
+          <td rowspan="12">Thursday</td>
+          <td rowspan="12">Regular</td>
+          <td>CSH 1</td>
+          <td colspan="2">CSH 143 (IT Mathematics),BLT 102  <br>[Mr Hudu ,0599739719]</br></td>
+          <td colspan="2">CSH 173 (Principles of Economics), BLT 202<br>[Mr Azure,BCT 02624788492]</br></td>
+          <td></td>
+          <td colspan="4">CSH (Computer Hardware) Lab 3,</br>[Sylvester Agyen, 0200161582]</br></td>
+          <td colspan="4" rowspan="12"></td>
+        </tr>
+        <tr>
+            <td>CSH 2</td>
+            <td>CSH 102</td>
+            <td>CSH 102</td>
+            <td colspan="2">CSH 251 (Web Development Technolog),MPLT 202<br>[Mavis Sarah Gyimah,0244528484]</br></td>
+            <td colspan="2">CSH 237 (Object Oriented Programming With Java),BT Lab </br>[Samuel King Opoku,0200553550]</br</td>
+            <td colspan="2">CSH 153 (Computer Hardware),Lab 3 <br>[Sylvester Agyen,0206898769]</br></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>CSH 3</td>
+            <td colspan="2">CSH 313 (Web Services With Semantic Lang),MPLT 203<br>[Mavis Sarah Gyimah ,0553599059]</br></td>
+            <td colspan="2">CSH 313 (Measurement of Building),BTLT 403</br>[Mavis Sarah Gyimah,0553599059]</br></td>
+            <td></td>
+            <td colspan="2">CSH 309 (Facilities Management),Lab 4</br>[Opoku Ansong,0553599059]</br></td>
+            <td colspan="">CSH 337 (Construction Technology),TLT 403</br>[Thekle,02624788492]</br></td>
+        </tr>
+        <tr>
+            <td>BTCT 1A</td>
+            <td></td>
+            <td></td>
+            <td colspan="2">BCT 107 (Digital Fundamentals),Lab 1</br>[Andrew Philips ,0599739719]</br></td>
+            <td colspan="2">BCT 141(Applied Technology),Lab 1</br>[Kofi Obeng, 0207602365]</td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>BTCT 1B</td>
+            <td colspan="2">BTCT 109 (Computing Mathematics),CLT 205<br>[MATHS]</br></td>
+            <td colspan="2">BCT 107(Digital Fundamentals),Lab 1<br>[Andrew Philips, 0207602365]</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>BTCT 2A</td>
+            <td colspan="2">BTCT 109(Management Information System),BTLT 102<br>[Mary Opoku Ansong ,0599739719]</br></td>
+            <td colspan="2">BTCT 201 (Human Computer Interactio),OLD GLT 102<br>[Daniel Adjei,0244528484]</br></td>
+            <td colspan="2">BTCT 233 (Database Systems),OLD GLT<br>[Mavis Sarah Gyimah,0599739719]</br></td>
+            <td></td>
+            <td colspan="2">BTCT 233(System Analysis and Design),Lab 1<br>[Asare Yaw Obeng ,0599739719]</td>
+        </tr>
+        <tr>
+            <td>BTCT 2B</td>
+            <td colspan="2">BCT 205 (Backend Web-Development),Lab 1<br>[Mercy Vicentia],0200553550] GPA</br></td>
+            <td colspan="2">BBT 207(Civil Engineering 2),CLT 203</br>[Asare Yaw,0200553550]</br></td>
+            <td colspan="2">BTCT 201 (Human Computer Interactio),OLD GLT 102<br>[Daniel Adjei,0244528484]</br></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>BTCT 3</td>
+            <td colspan="2">BCT 341 (Mobile App Development),Lab 3<br>[Eric Yaw Agbezuge,0553599059]</br></td>
+            <td colspan="2">BCT 301(Facilities Management 3),BCT 433</br>[Opoku Ansong,0553599059</br></td>
+            <td></td>
+            <td colspan="2">BCT 341(Construction Technology 3),BCT 433</br>[Thekle,02624788492]</td>
+        </tr>
+        <tr>
+            <td>BBT 4</td>
+            <td colspan="2">BCT400 Project</td>
+            <td colspan="2">BCT 413(PI with Data Analysis),BLT 103</br>[Emily Opoku Aboagye,0553599059</br></td>
+            <td></td>
+            <td colspan="2">BCT 441(Construction Technology 4),BCT 401</br>[Thekle,02624788492]</td>
+        </tr>
+    </div>
+    </table>
+    <table>
+        <tr>
+            <th colspan="17">Kuamsi Technical University</th>
+       </tr>
+       <tr>
+            <th colspan="17">COMPUTER SCIENCE DEPARTMENT</th>
+       </tr>
+       <tr>
+            <th colspan="17">TimeTable for 2023/2024 Semester one</th>
+       </tr>
+       <tr>
+        <th>Days</th>
+        <th>Session</th>
+        <th> Class</th>
+        <th>8:00-9:00</th>
+        <th>9:00-10:00</th>
+        <th>10:00-11:00</th>
+        <th>11:00-12:00</th>
+        <th>12:00-13:00</th>
+        <th>13:00-14:00</th>
+        <th>14:00-15:00</th>
+        <th>15:00-16:00</th>
+        <th>16:00-17:00</th>
+        <th>17:00-18:00</th>
+        <th>18:00-19:00</th>
+        <th>19:00-20:00</th>
+        <th>20:00-21:00</th>
+       </tr>
+
+       <tr>
+          <td>CSH 1</td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+            <td>CSH 2</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>CSH 3</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>BBT 1A</td>
+            <td></td>
+            <td></td>
+            <td ></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>BBT 1B</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>BBT 2A</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>BBT 2B</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>BBT 3</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>BBT 4</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+    
+    </table>
+</div>
+</div>
+</section>
+</main>
+</div>
+
+<section id="Last">
+    <footer>
+        <div class="row1">
+            <div class="col-lg-3">
+                <ul>
+                  <p>Quick Links</p>
+                  <li><a href="index.html">Staff Login</a></li>
+                  <li><a href="faculty.html">Staff Mail</a></li>
+                  <li><a href="departments.html">Student Portal</a></li>
+                  <li><a href="registration.html">Apply</a></li>
+                  <li><a href="timetables.html">Timetables</a></li>
+                </ul> 
+            </div>
+            <div class="col-lg-3">
+              <ul>
+                <p>Programmes</p>
+                <li>Bachelor of Science in Applied Statistics (Environmental Statistics)</li>
+                 <li>Bachelor of Science in Applied Statistics (Financial Statistics)</li>
+                 <li>Bachelor of Science in Applied Statistics (Health Statistics)</li>
+                 <li>Bachelor of Science in Information Science</li>
+                 <li>Bachelor of Technology in Computer Technology</li>
+                 <li>Bachelor of Technology in Data Science</li>
+                 <li>Bachelor of Technology in Food Technology</li>
+                 <li>Bachelor of Technology in Hospitality Management and Catering Technology</li>
+                 <li>Diploma in Food Processing Technology (Tertiary)</li>
+                 <li>Diploma in Hardware & Networking</li>
+                 <li>Diploma in Health Statistics</li>
+                 <li>Diploma in Health Statistics (Tertiary)</li><br>
+                 <li>Diploma in Hospitality Operations and Management</li>
+                 <li>Diploma in Information Technology</li>
+                 <li>Diploma in Information Technology (Tertiary)</li>
+                 <li>Diploma In Library And Information Science</li>
+                 <li>Diploma in Statistics for Risk Management</li>
+                 <li>Diploma in Web Applications and Database</li>
+                 <li>Higher Diploma In Health Statistics</li>
+                 <li>Higher Diploma in Health Statistics (Tertiary)</li>
+                 <li>HND Computer Science</li>
+                 <li>HND Hotel, Catering and Institutional Management</li>
+                 <li>HND Statistics</li>
+                 <li>Master of Technology in Applied Statistics (Environmental Statistics)</li>
+                 <li>Master of Technology in Applied Statistics (Financial Statistics)</li>
+                 <li>Master of Technology in Applied Statistics (Health Statistics)</li>
+
+              </ul>
+          </div>
+          <div class="col-lg-3">
+            <ul>
+              <p>Faculty of Applied Sciences</p>
+              <li>>Department of Computer Science</li>   
+              <li>Department of Food Technolog</li>
+              <li>Department of Information Science</li>
+              <li>Department of Mathematical Sciences</li>
+              <li>Department of Hotel, Catering and Institutional Management</li>
+
+              <p style="padding-top: 10px;">Faculty of Engineering</p>
+              <li>Civil Engineering</li>
+              <li>Mechanical Engineering</li>
+              <li>Oil and Gas navbar-expand-lg</li>
+            </ul>
+        </div>
+            <div class="col-lg-3">
+                <ul>
+                    <p> Contact KsTU</p>
+                    <li>Location: Kumasi - Ashanti Region, Ghana, W/A</li>
+                    <li>Postal Address: P. O. Box 854, Kumasi </li>
+                    <li>Email: info@kstu.edu.gh</li>
+                    <li>Tel: Admissions: +233(0)322 496 534, +233(0)322 496 380</li>
+                </ul>
+            </div>
+        </div>   
+    </footer>
+</section>
+<hr>
+<footer class="bg-dark-1">
+<h6 class="m-0 mt-4 text-center text-white text-capitalize">Copyright &copy; 2024 designed by AGYEI EUNICE JUNIOR</h6>
+</section>
+</footer>
+</body>
+</html>
